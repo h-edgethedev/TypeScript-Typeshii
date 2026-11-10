@@ -27,6 +27,7 @@ async function getCityTemperature(city: string): Promise<number> {
     const response = await fetch(`https://api.example.com/weather?city=${city}`)
     var data = await response.json()
     console.log(data)
+    return data
 }
 
 getCityTemperature("Lagos")
