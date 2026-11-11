@@ -25,5 +25,19 @@ function raiseTo(base: number, exponent?: number): number {
 let raisedResult = raiseTo(2, 3)
 console.log(raisedResult)
 
-let id: string | number = 43
+let id: string | number = "Heritage"
 console.log(id.toUpperCase())
+
+function produceRoot(num: unknown) {
+    if (typeof num === "number") {
+        console.log(Math.sqrt(num))
+    }
+    else{
+        console.log("Type is not a number")
+    }
+}
+
+produceRoot(49)
+// produceRoot("Heritage")
+
+const submitBtn = <HTMLButtonElement>document.querySelector(".submit-btn")
