@@ -27,6 +27,7 @@ interface Triangle extends Shape {
     width: number,
     height: number
 }
+type Shapes = Circle | Rectangle | Triangle
 
 radiusInput.addEventListener("input", () => {
     const radius = Number(radiusInput.value) || 0;
@@ -34,3 +35,7 @@ radiusInput.addEventListener("input", () => {
     resultText.textContent = `Area of the Circle: ${area.toFixed(2)}`
     console.log(Math.PI)
 });
+
+function getElement(){
+    
+}
